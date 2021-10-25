@@ -15,6 +15,6 @@ export class MiniUserComponent implements OnInit {
   ngOnInit(): void {}
 
   navigateToInfo(username: string) {
-    this.router.navigate(['/user', username]);
+    this.router.navigate(['/users', username]);
   }
 }

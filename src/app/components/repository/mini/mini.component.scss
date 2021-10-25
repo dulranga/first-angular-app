@@ -1,0 +1,29 @@
+.container {
+  background-color: #00969b7a;
+  padding: 1em;
+  width: 300px;
+  border-radius: 5px;
+
+  height: 100%;
+  h1 {
+    text-transform: capitalize;
+    line-break: strict;
+  }
+
+  .owner {
+    display: flex;
+    margin: 1em 0;
+    align-items: center;
+    .profile {
+      max-width: 40px;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    span {
+      font-weight: 600;
+      text-transform: capitalize;
+      margin-left: 0.5em;
+    }
+  }
+}

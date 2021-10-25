@@ -1,0 +1,42 @@
+.repos {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: stretch;
+  & > * {
+    margin: 0.5em;
+  }
+}
+
+.container {
+  padding: 2em;
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 2.75em;
+    text-align: center;
+  }
+  form {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  input {
+    border: 1px solid black;
+    padding: 0.25em 0.5em;
+
+    border-radius: 5px;
+    font-size: 1.5em;
+  }
+  button {
+    padding: 0.5em;
+    background-color: lightseagreen;
+    margin-left: 1em;
+    font-size: 1.2em;
+  }
+}

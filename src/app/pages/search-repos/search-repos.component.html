@@ -1,0 +1,18 @@
+<div class="container">
+  <header>
+    <h1 class="title">Search Repositories</h1>
+    <form #form="ngForm" (submit)="searchRepos(form.value)">
+      <input type="text" placeholder="Search Repos" name="query" ngModel />
+      <button type="submit">Seach</button>
+    </form>
+  </header>
+
+  <div class="total">{{ total }} Repos found</div>
+  <div class="repos" *ngIf="!!repos.length; else loading">
+    <spicy-mini-repo *ngFor="let repo of repos" [repo]="repo">
+    </spicy-mini-repo>
+  </div>
+</div>
+<ng-template #loading>
+  <spicy-loading></spicy-loading>
+</ng-template>

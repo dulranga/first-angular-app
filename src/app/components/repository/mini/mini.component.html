@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>{{ repo.name }}</h1>
+  <p>
+    {{ repo.description }}
+  </p>
+  <div class="owner">
+    <div class="profile">
+      <img [src]="repo.owner.avatar_url" alt="" />
+    </div>
+    <span>
+      {{ repo.owner.login }}
+    </span>
+  </div>
+</div>

@@ -1,7 +1,9 @@
 $COVER_HEIGH: 300px;
-
-.user {
+.container {
   background-color: #e8ffe8;
+  min-height: 100vh;
+}
+.user {
   position: relative;
   z-index: 50;
   display: flex;
@@ -46,6 +48,7 @@ $COVER_HEIGH: 300px;
     justify-content: space-between;
     width: 100%;
     max-width: 600px;
+    margin-top: 10px;
     .item {
       background-color: #00000021;
       padding: 0.5em 1em;

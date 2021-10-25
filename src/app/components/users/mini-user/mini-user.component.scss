@@ -1,8 +1,7 @@
 .container {
   background-color: lightgreen;
   border-radius: 5px;
-  width: 100%;
-  max-width: 300px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,8 +11,9 @@
     box-shadow: 0 20px 20px -10px #0000005d;
   }
   .cover {
-    width: 100%;
-    max-width: 200px;
+    aspect-ratio: 1/1;
+    background-color: #00aa00;
+    width: 170px;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
