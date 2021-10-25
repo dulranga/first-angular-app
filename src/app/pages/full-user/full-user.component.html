@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="user" *ngIf="!!user; else loading">
+    <div class="cover">
+      <img src="/assets/taiwan-01-11.jpg" alt="" />
+    </div>
+
+    <div class="profile">
+      <img [src]="user.avatar_url" [alt]="user.login" />
+    </div>
+    <h1>
+      {{ user.name || user.login }}
+    </h1>
+    <p [class]="user.bio && 'bio'">
+      {{ user.bio }}
+    </p>
+    <div class="info">
+      <div class="item">
+        <span>Since</span>
+        <span>{{ user.created_at | date: "yyyy-MM-dd" }}</span>
+      </div>
+      <div class="item">
+        <span>Followers</span><span>{{ user.followers }}</span>
+      </div>
+      <div class="item">
+        <span>Following</span><span>{{ user.following }}</span>
+      </div>
+      <div class="item">
+        <span>Repositories</span><span>{{ user.public_repos }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #loading>
+  <spicy-loading></spicy-loading>
+</ng-template>

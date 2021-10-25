@@ -1,0 +1,67 @@
+$COVER_HEIGH: 300px;
+
+.user {
+  background-color: #e8ffe8;
+  position: relative;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 1em;
+  &::before,
+  .cover {
+    content: "";
+    width: 100%;
+    height: $COVER_HEIGH;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: absolute;
+  }
+  .profile {
+    margin-top: $COVER_HEIGH - 200px / 2;
+    max-width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    @media screen and(max-width: 840px) {
+      align-self: center;
+      max-width: 150px;
+      margin-top: $COVER_HEIGH - 150px / 2;
+    }
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  .bio {
+    margin: 1em 0;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+
+    background-color: #00000015;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    .item {
+      background-color: #00000021;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      &:hover {
+        background-color: black;
+        color: #fff;
+      }
+      span:first-child {
+        margin-right: 0.5em;
+      }
+    }
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
