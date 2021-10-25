@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="cover">
+    <img [src]="user.avatar_url" [alt]="user.login" />
+  </div>
+  <h1>
+    {{ user.login }}
+  </h1>
+
+  <button (click)="navigateToInfo(user.login)">View Profile</button>
+</div>
