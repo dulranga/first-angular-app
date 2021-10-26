@@ -1,7 +1,7 @@
 <div class="container">
   <h1>{{ repo.name }}</h1>
   <p>
-    {{ repo.description }}
+    {{ repo.description | truncate: 30 }}
   </p>
   <div class="owner">
     <div class="profile">

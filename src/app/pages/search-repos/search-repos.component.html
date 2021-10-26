@@ -9,10 +9,10 @@
 
   <div class="total">{{ total }} Repos found</div>
   <div class="repos" *ngIf="!!repos.length; else loading">
-    <spicy-mini-repo *ngFor="let repo of repos" [repo]="repo">
-    </spicy-mini-repo>
+    <angular-mini-repo *ngFor="let repo of repos" [repo]="repo">
+    </angular-mini-repo>
   </div>
 </div>
 <ng-template #loading>
-  <spicy-loading></spicy-loading>
+  <angular-loading></angular-loading>
 </ng-template>

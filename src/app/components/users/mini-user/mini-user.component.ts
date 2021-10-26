@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { IUser } from 'src/app/services/users/user';
 
 @Component({
-  selector: 'spicy-mini-user',
+  selector: 'angular-mini-user',
   templateUrl: './mini-user.component.html',
   styleUrls: ['./mini-user.component.scss'],
 })
