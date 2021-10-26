@@ -1,0 +1,21 @@
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 99999999;
+  background-color: #fff;
+  padding: 1em;
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    li {
+      list-style: none;
+      font-size: 1.5em;
+      font-weight: 800;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+}
